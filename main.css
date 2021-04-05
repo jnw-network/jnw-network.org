@@ -1,31 +1,37 @@
+@font-face {
+    font-family: mainFont;
+    src: url(resources/Bookmania\ Regular.otf);
+  }
+
 html, body {
     height: 100%;
 }
 
 body {
     margin:0;
+    font-family: mainFont;
 }
 
 #header {
-    background-image: url("resources/testbackground.jpeg");
+    background-image: url("resources/background.jpeg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: left;
     background-size: cover;
-    position: relative;
     width: 100%;
     height: 100%;
+    display:flex;
 }
 
 #header-content {
-    position:absolute;
+    align-self: flex-end;
     bottom:0;
     left:0;
     height: 20%;
     display: flex;
     width: 100%;
     background: rgb(0,0,0);
-    background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%);
+    background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,0) 100%);
     border-bottom: black 1px solid;
 }
 
@@ -44,26 +50,30 @@ body {
     font-size: 4rem;
 }
 
-#header-content h1 a {
+h1 a {
     color:whitesmoke;
     text-decoration: none;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
 }
 
 #notification {
     position: fixed;
-    top:3rem;
+    top:0;
     right:0;
-    background-color:silver;
-    padding: 1rem;
-    font-size: 1.5rem;
-    color: whitesmoke;
-    border-radius: 5px 0px 0px 5px;
+    font-size: 2rem;
+    background-color: lightcoral;
+    padding-left:0.2rem;
+    padding-bottom: 0.2rem;
+    box-shadow: -1px 1px 2px 2px rgba(0,0,0,0.4);
 }
 
 #notification a {
+    color:whitesmoke;
     text-decoration: none;
-    color:#0000EE;
-    font-weight: bold;
 }
 
 #homepage {
@@ -77,6 +87,7 @@ body {
     display: inline-grid;
     padding-left:1rem;
     font-size: 1.2rem;
+    color:whitesmoke;
 }
 
 #homepage .container h1 {
@@ -85,26 +96,41 @@ body {
 
 #homepage .container h1 a {
     text-decoration: none;
-    color:#0000EE;
+    color:whitesmoke;
 }
 
 #homepage #large {
+    background-image:url("resources/selbst.jpeg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 3;
+    margin:0 0.5rem 0 0;
 }
 
 #homepage #smalltop {
+    background-image:url("resources/kontakt.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    margin:0 0 0.5rem 0.5rem;
 }
 
 #homepage #smallbottom {
+    background-image:url("resources/spenden.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+    margin: 0.5rem 0 0 0.5rem;
 }
