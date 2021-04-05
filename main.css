@@ -21,38 +21,90 @@ body {
     position:absolute;
     bottom:0;
     left:0;
-    padding-bottom: 1rem;
+    height: 20%;
+    display: flex;
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0) 100%);
+    border-bottom: black 1px solid;
+}
+
+#header-content span {
+    align-self: flex-end;
+    color: whitesmoke;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    font-size: 2rem;
 }
 
 #header-content h1 {
     padding:0;
     padding-bottom: 0.5rem;
     margin:0;
+    font-size: 4rem;
+}
+
+#header-content h1 a {
+    color:whitesmoke;
+    text-decoration: none;
 }
 
 #notification {
-    position: absolute;
-    top: 5rem;
+    position: fixed;
+    top:3rem;
     right:0;
-    background-color: red;
-    padding: 0.5rem;
+    background-color:silver;
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    border-radius: 5px 0px 0px 5px;
 }
 
-#homepage .link {
-    background-image: url("resources/testcircle.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size:contain;
-    float:left;
-    width:33%;
-    min-width: 25rem;
-    height: 25rem;
-    text-align: center;
-    margin-top: 2rem;
+#notification a {
+    text-decoration: none;
+    color:#0000EE;
+    font-weight: bold;
 }
 
-#homepage .link .link-content {
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 25rem;
+#homepage {
+    background-color: whitesmoke;
+    height:80%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#homepage .container {
+    display: inline-grid;
+    padding-left:1rem;
+    font-size: 1.2rem;
+}
+
+#homepage .container h1 {
+    font-size: 2rem;
+}
+
+#homepage .container h1 a {
+    text-decoration: none;
+    color:#0000EE;
+}
+
+#homepage #large {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+#homepage #smalltop {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#homepage #smallbottom {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
