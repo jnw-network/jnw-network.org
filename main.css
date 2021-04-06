@@ -80,10 +80,14 @@ h1 a {
     background-color: whitesmoke;
     height: 80%;
     display: flex;
+    
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 #footer {
     height: 1rem;
     background-color: whitesmoke;
     text-align: right;
+    text-decoration: none;
 }
