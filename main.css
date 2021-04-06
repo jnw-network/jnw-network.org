@@ -1,7 +1,7 @@
 @font-face {
     font-family: mainFont;
-    src: url(resources/Bookmania\ Regular.otf);
-  }
+    src: url(resources/bookmania_regular.otf);
+}
 
 html, body {
     height: 100%;
@@ -133,4 +133,9 @@ h1 a {
     grid-row-start: 2;
     grid-row-end: 3;
     margin: 0.5rem 0 0 0.5rem;
+}
+
+#footer {
+    text-align: right;
+    background-color: whitesmoke;
 }
