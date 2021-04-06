@@ -1,6 +1,6 @@
 @font-face {
     font-family: mainFont;
-    src: url(_resources/bookmania_regular.otf);
+    src: url(resources/bookmania_regular.otf);
 }
 
 html, body {
@@ -13,7 +13,7 @@ body {
 }
 
 #header {
-    background-image: url("_resources/background.jpeg");
+    background-image: url("resources/background.jpeg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: left;

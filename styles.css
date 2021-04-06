@@ -24,7 +24,7 @@
 }
 
 #homepage #large {
-    background-image:url("_resources/selbst.jpeg");
+    background-image:url("resources/selbst.jpeg");
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
@@ -36,7 +36,7 @@
 }
 
 #homepage #smalltop {
-    background-image:url("_resources/kontakt.jpg");
+    background-image:url("resources/kontakt.jpg");
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
@@ -48,7 +48,7 @@
 }
 
 #homepage #smallbottom {
-    background-image:url("_resources/spenden.jpg");
+    background-image:url("resources/spenden.jpg");
     background-repeat: no-repeat;
     background-position: left;
     background-size: cover;
