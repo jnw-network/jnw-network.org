@@ -1,0 +1,60 @@
+#homepage {
+    background-color: whitesmoke;
+    height:80%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#homepage .container {
+    display: inline-grid;
+    font-size: 1.2rem;
+    color:whitesmoke;
+}
+
+#homepage .container h1 {
+    font-size: 2rem;
+    text-decoration: none;
+    color:whitesmoke;
+}
+
+#homepage .container .description {
+    padding-left:1rem;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.2) 10%, rgba(0,0,0,0.4) 40%);
+}
+
+#homepage #large {
+    background-image:url("_resources/selbst.jpeg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin:1rem 0.5rem 0 0;
+}
+
+#homepage #smalltop {
+    background-image:url("_resources/kontakt.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin:1rem 0 0.5rem 0.5rem;
+}
+
+#homepage #smallbottom {
+    background-image:url("_resources/spenden.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 0.5rem 0 0 0.5rem;
+}
